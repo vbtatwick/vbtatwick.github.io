@@ -1047,7 +1047,7 @@ body.vi-active {
   flex-direction: column;
   gap: 1.25rem;
   background: linear-gradient(#FFFFFF, #FFFCF7) padding-box,
-              var(--metallic-gold-gradient) border-box;
+    var(--metallic-gold-gradient) border-box;
   border: 2px solid transparent;
   border-radius: var(--radius-lg);
   padding: 2rem;
@@ -1344,7 +1344,7 @@ body.vi-active {
 
   .contact-form {
     padding: 1.25rem 1rem !important;
-    width: 100% !important;
+    width: 88% !important;
     box-sizing: border-box !important;
   }
 
@@ -1742,7 +1742,7 @@ body.vi-active {
   }
 
   .social-btn {
-    width: 100%;
+    width: 90%;
     justify-content: center;
   }
 }
@@ -1760,6 +1760,7 @@ body.vi-active {
 }
 
 @media (max-width: 768px) {
+
   #membership-hero,
   #member-gallery {
     padding-top: 5.5rem !important;

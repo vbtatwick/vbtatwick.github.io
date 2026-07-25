@@ -746,74 +746,71 @@
           <span class="lotus">🪷</span>
         </div>
 
-        <!-- ── CONTACT SECTION ── -->
-        <section id="contact" class="section reveal-parent">
-          <div class="section-inner">
-            <div class="contact-grid">
+        <div class="contact-grid">
 
-              <!-- 📍 LEFT COLUMN: Contact Details & Social Links -->
-              <div class="reveal-child">
-                <h2>Let's Connect</h2>
-                <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
-                  Whether you want to join our club, partner on a project, or simply learn more about what we do — drop
-                  us a message!
-                </p>
+          <!-- 📍 LEFT COLUMN: Contact Details & Social Links -->
+          <div class="reveal-child">
+            <h2>Let's Connect</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
+              Whether you want to join our club, partner on a project, or simply learn more about what we do — drop
+              us a message!
+            </p>
 
-                <!-- Standard Contact Info -->
-                <div style="display: flex; flex-direction: column; gap: 1rem; margin-bottom: 2rem;">
-                  <div>📍 Bengaluru, Karnataka, India</div>
-                  <div>📧 rotaractbangalorehighgrounds@gmail.com</div>
-                  <div>📱 +91 98765 43210</div>
-                  <div>🌐 RI District 3191 • Club ID: 8826633</div>
-                </div>
+            <!-- Standard Contact Info -->
+            <div style="display: flex; flex-direction: column; gap: 1rem; margin-bottom: 2rem;">
+              <div>📍 Bengaluru, Karnataka, India</div>
+              <div>📧 rotaractbangalorehighgrounds@gmail.com</div>
+              <div>📱 +91 77600 19285</div>
+              <div>🌐 RI District 3191 • Club ID: 8826633</div>
+            </div>
 
-                <!-- 🌟 Premium Interactive Social Links -->
-                <div class="social-connect-container">
-                  <span class="social-label">Follow & Chat with Us:</span>
-                  <div class="social-links-row">
-                    <!-- WhatsApp (Replace with your link/phone) -->
-                    <a href="https://wa.me/+919008350631" target="_blank" rel="noopener noreferrer"
-                      class="social-btn whatsapp-btn" aria-label="Chat on WhatsApp">
-                      <i class="fab fa-whatsapp"></i>
-                      <span>WhatsApp</span>
-                    </a>
+            <!-- 🌟 Premium Interactive Social Links -->
+            <div class="social-connect-container">
+              <span class="social-label">Follow & Chat with Us:</span>
+              <div class="social-links-row">
+                <a href="https://wa.me/+919008350631" target="_blank" rel="noopener noreferrer"
+                  class="social-btn whatsapp-btn" aria-label="Chat on WhatsApp">
+                  <i class="fab fa-whatsapp"></i>
+                  <span>WhatsApp</span>
+                </a>
 
-                    <!-- Instagram (Replace with your handle) -->
-                    <a href="https://instagram.com/rac_bangalore_highgrounds" target="_blank" rel="noopener noreferrer"
-                      class="social-btn instagram-btn" aria-label="Follow us on Instagram">
-                      <i class="fab fa-instagram"></i>
-                      <span>Instagram</span>
-                    </a>
-                  </div>
-                </div>
+                <a href="https://instagram.com/rac_bangalore_highgrounds" target="_blank" rel="noopener noreferrer"
+                  class="social-btn instagram-btn" aria-label="Follow us on Instagram">
+                  <i class="fab fa-instagram"></i>
+                  <span>Instagram</span>
+                </a>
               </div>
-
-              <!-- ✉️ RIGHT COLUMN: Styled Contact Form (Restored) -->
-              <div class="reveal-child">
-                <form class="contact-form" action="#" method="POST">
-                  <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
-                  </div>
-                  <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" required placeholder="Enter your email address">
-                  </div>
-                  <div class="form-group">
-                    <label for="message">Your Message</label>
-                    <textarea id="message" name="message" rows="5" required
-                      placeholder="Type your message here..."></textarea>
-                  </div>
-                  <button type="submit" class="form-submit btn btn-primary">
-                    Send Message <span style="margin-left: 8px;">✈️</span>
-                  </button>
-                </form>
-              </div>
-
             </div>
           </div>
-        </section>
 
+          <!-- ✉️ RIGHT COLUMN: FormSubmit Integrated Contact Form -->
+          <div class="reveal-child">
+            <form class="contact-form" action="https://formsubmit.co/rotaractbangalorehighgrounds@gmail.com" method="POST">
+              <!-- FormSubmit Configuration Hidden Fields -->
+              <input type="hidden" name="_subject" value="New Contact Message — Rotaract Club of Bangalore High Grounds">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_captcha" value="false">
+
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email address">
+              </div>
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" required
+                  placeholder="Type your message here..."></textarea>
+              </div>
+              <button type="submit" class="form-submit btn btn-primary">
+                Send Message <span style="margin-left: 8px;">✈️</span>
+              </button>
+            </form>
+          </div>
+
+        </div>
       </div>
     </section>
 
