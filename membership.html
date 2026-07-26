@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+  <title>Membership | Rotaract Club of Bangalore High Grounds</title>
+  <meta name="description"
+    content="Meet the members of Rotaract Club of Bangalore High Grounds and explore our membership statistics.">
+
+  <meta name="author" content="Rotaract Club of Bangalore High Grounds">
+  <meta name="keywords" content="Rotaract, Members, High Grounds, Bangalore, Community, RI District 3191">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0A0A2E">
+
+  <!-- Favicon and Fonts -->
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- ══════════════════════════════════════
+       FLOATING PARTICLES
+       ══════════════════════════════════════ -->
+  <div id="particles-container"></div>
+
+  <!-- ══════════════════════════════════════
+       NAVIGATION
+       ══════════════════════════════════════ -->
+  <nav id="main-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/logo.png" alt="RCBHG Logo">
+        <div class="nav-logo-text">
+          <small>Rotaract Club of Bangalore</small>
+          <h2>HIGH GROUNDS</h2>
+        </div>
+      </a>
+      <div class="nav-links">
+        <a href="index.html#about" class="nav-link">About</a>
+        <a href="membership.html" class="nav-link active">Membership</a>
+        <a href="index.html#focus-areas" class="nav-link">Focus Areas</a>
+        <a href="index.html#projects" class="nav-link">Projects</a>
+        <a href="index.html#team" class="nav-link">Team</a>
+        <a href="index.html#contact" class="nav-cta">Contact Us</a>
+      </div>
+      <button id="hamburger" class="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Drawer -->
+  <div id="mobile-menu" class="mobile-menu">
+    <a href="index.html#about" class="nav-link">About</a>
+    <a href="membership.html" class="nav-link active">Membership</a>
+    <a href="index.html#focus-areas" class="nav-link">Focus Areas</a>
+    <a href="index.html#projects" class="nav-link">Projects</a>
+    <a href="index.html#team" class="nav-link">Team</a>
+    <a href="index.html#contact" class="nav-link">Contact Us</a>
+  </div>
+  <div id="mobile-backdrop" class="mobile-backdrop"></div>
+
+  <!-- ══════════════════════════════════════
+       MAIN CONTENT
+       ══════════════════════════════════════ -->
+  <main id="main-content">
+
+    <!-- ── MEMBERSHIP HERO SECTION ── -->
+    <!-- <section id="membership-hero" class="section reveal-parent">
+      <div class="section-inner">
+        <h1 class="hero-title reveal-child" style="font-size: 3.5rem; text-align: center;">
+          Our <span class="highlight">Members</span>
+        </h1>
+        <p class="hero-subtitle reveal-child" style="max-width: 900px; margin: 1rem auto 0; text-align: center;">
+          The heart of our club. Meet the passionate individuals who drive our mission forward.
+        </p>
+      </div>
+    </section> -->
+
+    <!-- ── MEMBER GALLERY ── -->
+    <section id="member-gallery" class="section reveal-parent">
+      <div class="section-inner">
+        <h2 class="section-title reveal-child">Meet the HighGrounders</h2>
+        <div class="indian-divider reveal-divider reveal-child">
+          <span class="lotus">🪷</span>
+        </div>
+
+        <div class="member-gallery-grid">
+          <!-- Member 1 -->
+          <div class="member-card reveal-child">
+            <div class="member-photo">
+              <img src="assets/bod/Rtr. Nandan Kumar V S.png" alt="Rtr. Nandan Kumar V S">
+            </div>
+            <div class="member-details">
+              <h3>Rtr. Nandan Kumar V S</h3>
+            </div>
+          </div>
+
+          <!-- Member 2 -->
+          <div class="member-card reveal-child">
+            <div class="member-photo">
+              <img src="assets/bod/IPP. Rtr. Rohith K R.jpeg" alt="IPP. Rtr. Rohith K R">
+            </div>
+            <div class="member-details">
+              <h3>IPP. Rtr. Rohith K R</h3>
+            </div>
+          </div>
+
+          <!-- Member 3 -->
+          <div class="member-card reveal-child">
+            <div class="member-photo">
+              <img src="assets/bod/Rtr. Padma Charan R.png" alt="Rtr. Padma Charan R">
+            </div>
+            <div class="member-details">
+              <h3>Rtr. Padma Charan R</h3>
+            </div>
+          </div>
+
+          <!-- Member 4 -->
+          <div class="member-card reveal-child">
+            <div class="member-photo">
+              <img src="assets/bod/Rtr. Chethana MS.jpeg" alt="Rtr. Chethana MS">
+            </div>
+            <div class="member-details">
+              <h3>Rtr. Chethana MS</h3>
+            </div>
+          </div>
+
+          <!-- Member 5 -->
+          <div class="member-card reveal-child">
+            <div class="member-photo">
+              <img src="assets/bod/PP. Rtr. Madan Mohan B.jpg" alt="PP. Rtr. Madan Mohan B">
+            </div>
+            <div class="member-details">
+              <h3>PP. Rtr. Madan Mohan B</h3>
+            </div>
+          </div>
+
+          <!-- Member 6 -->
+          <div class="member-card reveal-child">
+            <div class="member-photo">
+              <img src="assets/bod/Rtr. Karthik M V.jpeg" alt="Rtr. Karthik M V">
+            </div>
+            <div class="member-details">
+              <h3>Rtr. Karthik M V</h3>
+            </div>
+          </div>
+
+          <!-- Member 7 -->
+          <div class="member-card reveal-child">
+            <div class="member-photo">
+              <img src="assets/bod/Rtr. Tatwickvb.jpeg" alt="PP. Rtr. Tatwick V B">
+            </div>
+            <div class="member-details">
+              <h3>PP. Rtr. Tatwick V B</h3>
+            </div>
+          </div>
+
+          <!-- Member 8 -->
+          <div class="member-card reveal-child">
+            <div class="member-photo">
+              <img src="assets/bod/Rtr. Manoj B.jpeg" alt="Rtr. Manoj B">
+            </div>
+            <div class="member-details">
+              <h3>Rtr. Manoj B</h3>
+            </div>
+          </div>
+
+          <!-- Member 9 -->
+          <div class="member-card reveal-child">
+            <div class="member-photo">
+              <img src="assets/bod/Rtr. Varshita B S.jpg" alt="Rtr. Varshita B S">
+            </div>
+            <div class="member-details">
+              <h3>Rtr. Varshita B S</h3>
+            </div>
+          </div>
+
+          <!-- Member 10 -->
+          <div class="member-card reveal-child">
+            <div class="member-photo">
+              <img src="assets/bod/Rtr. Gunasheela Gowda.jpeg" alt="Rtr. Gunasheela Gowda">
+            </div>
+            <div class="member-details">
+              <h3>Rtr. Gunasheela Gowda</h3>
+            </div>
+          </div>
+
+          <!-- Member 11 -->
+          <div class="member-card reveal-child">
+            <div class="member-photo">
+              <img src="assets/bod/Rtr. Kishan A.png" alt="Rtr. Kishan A">
+            </div>
+            <div class="member-details">
+              <h3>Rtr. Kishan A</h3>
+            </div>
+          </div>
+
+          <!-- Member 12 -->
+          <div class="member-card reveal-child">
+            <div class="member-photo">
+              <img src="assets/bod/Rtr. Manoj R.jpeg" alt="Rtr. Manoj R">
+            </div>
+            <div class="member-details">
+              <h3>Rtr. Manoj R</h3>
+            </div>
+          </div>
+
+          <!-- Member 13 -->
+          <div class="member-card reveal-child">
+            <div class="member-photo">
+              <img src="assets/bod/IPP.Rtr.Sushmitha R Mohare.jpeg" alt="IPP. Rtr. Sushmitha R Mohare">
+            </div>
+            <div class="member-details">
+              <h3>IPP. Rtr. Sushmitha R Mohare</h3>
+            </div>
+          </div>
+
+          <!-- Member 14 -->
+          <div class="member-card reveal-child">
+            <div class="member-photo">
+              <img src="assets/bod/IPP. Rtr. Yashwanth Gowda S.jpg" alt="IPP. Rtr. Yashwanth Gowda S">
+            </div>
+            <div class="member-details">
+              <h3>IPP. Rtr. Yashwanth Gowda S</h3>
+            </div>
+          </div>
+
+          <!-- Member 15 -->
+          <div class="member-card reveal-child">
+            <div class="member-photo">
+              <img src="assets/bod/Rtr. Kushan V.webp" alt="Rtr. Kushan V">
+            </div>
+            <div class="member-details">
+              <h3>Rtr. Kushan V</h3>
+            </div>
+          </div>
+
+          <!-- Member 16 -->
+          <div class="member-card reveal-child">
+            <div class="member-photo">
+              <img src="assets/bod/Rtr. Sriya T.png" alt="Rtr. Sriya T">
+            </div>
+            <div class="member-details">
+              <h3>Rtr. Sriya T</h3>
+            </div>
+          </div>
+
+          <!-- Member 17 -->
+          <div class="member-card reveal-child">
+            <div class="member-photo">
+              <img src="assets/bod/Rtr. Diya Jain.jpeg" alt="Rtr. Diya Jain">
+            </div>
+            <div class="member-details">
+              <h3>Rtr. Diya Jain</h3>
+            </div>
+          </div>
+
+          <!-- Member 18 -->
+          <div class="member-card reveal-child">
+            <div class="member-photo">
+              <img src="assets/bod/Rtr. Dhriti Singh.png" alt="Rtr. Dhriti Singh">
+            </div>
+            <div class="member-details">
+              <h3>Rtr. Dhriti Singh</h3>
+            </div>
+          </div>
+
+          <!-- Member 19 -->
+          <div class="member-card reveal-child">
+            <div class="member-photo">
+              <img src="assets/bod/Rtr. Sakshi Agarwal.jpg" alt="Rtr. Sakshi Agarwal">
+            </div>
+            <div class="member-details">
+              <h3>Rtr. Sakshi Agarwal</h3>
+            </div>
+          </div>
+
+          <!-- Member 20 -->
+          <div class="member-card reveal-child">
+            <div class="member-photo">
+              <img src="assets/bod/Rtr Lokapriya R.jpg" alt="Rtr. Lokapriya R">
+            </div>
+            <div class="member-details">
+              <h3>Rtr. Lokapriya R</h3>
+            </div>
+          </div>
+
+          <!-- Member 21 -->
+          <div class="member-card reveal-child">
+            <div class="member-photo">
+              <img src="assets/bod/Rtr. Kavyashree S.png" alt="Rtr. Kavyashree S">
+            </div>
+            <div class="member-details">
+              <h3>Rtr. Kavyashree S</h3>
+            </div>
+          </div>
+
+          <!-- Member 22 -->
+          <div class="member-card reveal-child">
+            <div class="member-photo">
+              <img src="assets/members/PP. Rtr. Padma Nesar R.jpg" alt="PP. Rtr. Padma Nesar R">
+            </div>
+            <div class="member-details">
+              <h3>PP. Rtr. Padma Nesar R</h3>
+            </div>
+          </div>
+
+          <!-- Member 23 -->
+          <div class="member-card reveal-child">
+            <div class="member-photo">
+              <img src="assets/members/Rtr. Vijay R.jpg" alt="Rtr. Vijay R">
+            </div>
+            <div class="member-details">
+              <h3>Rtr. Vijay R</h3>
+            </div>
+          </div>
+
+          <!-- Member 24 -->
+          <div class="member-card reveal-child">
+            <div class="member-photo">
+              <img src="assets/members/Rtr. Darshana Sankhla.jpeg" alt="Rtr. Darshana Sankhla">
+            </div>
+            <div class="member-details">
+              <h3>Rtr. Darshana Sankhla</h3>
+            </div>
+          </div>
+
+          <!-- Member 25 -->
+          <div class="member-card reveal-child">
+            <div class="member-photo">
+              <img src="assets/members/PP Rtr. Dheeraj D Raikar.jpg" alt="PP Rtr. Dheeraj D Raikar">
+            </div>
+            <div class="member-details">
+              <h3>PP Rtr. Dheeraj D Raikar</h3>
+            </div>
+          </div>
+
+          <!-- Member 26 -->
+          <div class="member-card reveal-child">
+            <div class="member-photo">
+              <img src="assets/members/Rtr. Mohd Mujaheed.jpeg" alt="Rtr. Mohd Mujaheed">
+            </div>
+            <div class="member-details">
+              <h3>Rtr. Mohd Mujaheed</h3>
+            </div>
+          </div>
+
+          <!-- Member 27 -->
+          <div class="member-card reveal-child">
+            <div class="member-photo">
+              <img src="assets/members/PP Rtr. Vishnu V.jpg" alt="PP Rtr. Vishnu V">
+            </div>
+            <div class="member-details">
+              <h3>PP Rtr. Vishnu V</h3>
+            </div>
+          </div>
+
+          <!-- Member 28 -->
+          <div class="member-card reveal-child">
+            <div class="member-photo">
+              <img src="assets/members/Rtr. Shreyas S Rigvedi.jpg" alt="Rtr. Shreyas S Rigvedi">
+            </div>
+            <div class="member-details">
+              <h3>Rtr. Shreyas S Rigvedi</h3>
+            </div>
+          </div>
+
+          <!-- Member 29 -->
+          <div class="member-card reveal-child">
+            <div class="member-photo">
+              <img src="assets/members/Rtr. Riya Singhal.jpeg" alt="Rtr. Riya Singhal">
+            </div>
+            <div class="member-details">
+              <h3>Rtr. Riya Singhal</h3>
+            </div>
+          </div>
+
+          <!-- Member 30 -->
+          <div class="member-card reveal-child">
+            <div class="member-photo">
+              <img src="assets/members/Rtr. Sai Jaswanth J Ganesh.jpeg" alt="Rtr. Sai Jaswanth J Ganesh">
+            </div>
+            <div class="member-details">
+              <h3>Rtr. Sai Jaswanth J Ganesh</h3>
+            </div>
+          </div>
+
+          <!-- Member 31 -->
+          <div class="member-card reveal-child">
+            <div class="member-photo">
+              <img src="assets/members/Rtr. Vaishnav Prasid P.jpeg" alt="Rtr. Vaishnav Prasid P">
+            </div>
+            <div class="member-details">
+              <h3>Rtr. Vaishnav Prasid P</h3>
+            </div>
+          </div>
+
+          <!-- Member 32 -->
+          <div class="member-card reveal-child">
+            <div class="member-photo">
+              <img src="assets/members/Rtr. Gokul.jpg" alt="Rtr. Gokul">
+            </div>
+            <div class="member-details">
+              <h3>Rtr. Gokul</h3>
+            </div>
+          </div>
+
+          <!-- Member 33 -->
+          <div class="member-card reveal-child">
+            <div class="member-photo">
+              <img src="assets/members/Rtr. Prerana Balakrishna.jpeg" alt="Rtr. Prerana Balakrishna">
+            </div>
+            <div class="member-details">
+              <h3>Rtr. Prerana Balakrishna</h3>
+            </div>
+          </div>
+
+          <!-- Member 34 -->
+          <div class="member-card reveal-child">
+            <div class="member-photo">
+              <img src="assets/members/Rtr. Deekshitha Puttraj.jpg" alt="Rtr. Deekshitha Puttraj">
+            </div>
+            <div class="member-details">
+              <h3>Rtr. Deekshitha Puttraj</h3>
+            </div>
+          </div>
+
+          <!-- Member 35 -->
+          <div class="member-card reveal-child">
+            <div class="member-photo">
+              <img src="assets/members/Rtr. Shirali Kaushal.jpg" alt="Rtr. Shirali Kaushal">
+            </div>
+            <div class="member-details">
+              <h3>Rtr. Shirali Kaushal</h3>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+       ══════════════════════════════════════ -->
+  <footer id="footer">
+    <div class="footer-grid">
+      <div>
+        <h4 style="color: var(--gold-bright); margin-bottom: 0.5rem;">Rotaract Club of Bangalore High Grounds</h4>
+        <p style="color: var(--text-muted); font-size: 0.85rem;">
+          Young leaders serving the community through fellowship and leadership. Part of Rotary International District
+          3191.
+        </p>
+      </div>
+      <div>
+        <h4 style="color: var(--gold); font-size: 0.85rem; text-transform: uppercase; margin-bottom: 0.75rem;">Quick
+          Links</h4>
+        <a href="index.html#about" style="display:block; color:var(--text-muted); margin-bottom: 0.25rem;">About</a>
+        <a href="index.html#projects"
+          style="display:block; color:var(--text-muted); margin-bottom: 0.25rem;">Projects</a>
+        <a href="index.html#team" style="display:block; color:var(--text-muted); margin-bottom: 0.25rem;">Team</a>
+        <a href="index.html#contact" style="display:block; color:var(--text-muted);">Contact</a>
+      </div>
+      <div>
+        <h4 style="color: var(--gold); font-size: 0.85rem; text-transform: uppercase; margin-bottom: 0.75rem;">
+          Engagement</h4>
+        <a href="membership.html" style="display:block; color:var(--text-muted); margin-bottom: 0.25rem;">Membership</a>
+        <a href="index.html#contact" style="display:block; color:var(--text-muted); margin-bottom: 0.25rem;">Contact</a>
+        <a href="https://rotary.org" target="_blank" rel="noopener"
+          style="display:block; color:var(--text-muted);">Rotary
+          International</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Rotaract Club of Bangalore High Grounds. All rights reserved.</span>
+      <div class="tricolor-bar">
+        <span class="saffron"></span>
+        <span class="white"></span>
+        <span class="green"></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
