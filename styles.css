@@ -1356,6 +1356,28 @@ body.vi-active {
     display: flex;
   }
 
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+    width: 100% !important;
+  }
+
+  .contact-form {
+    padding: 1.25rem 1rem !important;
+    width: 88% !important;
+    box-sizing: border-box !important;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
   #hero {
     min-height: 100vh;
     display: flex;
@@ -1790,6 +1812,86 @@ body.vi-active {
 .member-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Member photo container */
+.member-photo {
+  width: 100%;
+  height: 300px;
+  /* Adjust height as needed */
+  overflow: hidden;
+}
+
+.member-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Ensures image covers the area without distortion */
+  object-position: top;
+  /* Prioritizes the top of the image */
+  transition: transform 0.3s ease;
+}
+
+.member-card:hover .member-photo img {
+  transform: scale(1.05);
+}
+
+/* Container for name and details */
+.member-details {
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.member-details h3 {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 0.25rem 0;
+  background: linear-gradient(135deg, #BF953F, #B38728, #AA771C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.member-details .member-role {
+  color: var(--gold);
+  font-size: 0.9rem;
+  margin: 0.25rem 0 0.75rem;
+  font-weight: 600;
+}
+
+.member-details .member-since {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  margin-top: auto;
+  /* Pushes it to the bottom if card heights vary */
+}
+
+/* Make the active nav link stand out */
+.nav-link.active {
+  color: var(--gold-bright);
+  font-weight: 700;
+}
+
+.member-details .member-ri-id {
+  color: var(--text-muted);
+  /* Keeps it subtle */
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+  /* Adds a tiny space below Member Since */
+  font-family: monospace;
+  /* Optional: gives the ID number a clean, technical look */
+}
+
+/* Ensure the Member Since margin doesn't push the RI ID too far down */
+.member-details .member-since {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  margin-top: auto;
 }
 
 /* Member photo container */
