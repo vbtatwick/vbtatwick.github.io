@@ -394,25 +394,50 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ══════════════════════════════════════
-  // FORM HANDLING
+  // FORMSUBMIT AJAX HANDLING
   // ══════════════════════════════════════
 
-  const contactForm = document.getElementById('contact-form');
+  const contactForm = document.querySelector('.contact-form') || document.getElementById('contact-form');
   if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', function (e) {
       e.preventDefault();
 
       const submitBtn = contactForm.querySelector('.form-submit');
-      const originalText = submitBtn.textContent;
+      const originalText = submitBtn.innerHTML;
 
-      submitBtn.textContent = '✓ Message Sent!';
-      submitBtn.style.background = 'linear-gradient(135deg, #22c55e, #16a34a)';
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = 'Sending... ⏳';
 
-      setTimeout(() => {
-        submitBtn.textContent = originalText;
-        submitBtn.style.background = '';
+      const formData = new FormData(contactForm);
+
+      fetch('https://formsubmit.co/ajax/rotaractbangalorehighgrounds@gmail.com', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      })
+      .then(response => {
+        if (response.ok) {
+          return response.json();
+        } else {
+          throw new Error('FormSubmit error response');
+        }
+      })
+      .then(data => {
+        submitBtn.innerHTML = '✓ Message Sent!';
+        submitBtn.style.background = 'linear-gradient(135deg, #22c55e, #16a34a)';
         contactForm.reset();
-      }, 3000);
+        setTimeout(() => {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalText;
+          submitBtn.style.background = '';
+        }, 4000);
+      })
+      .catch(error => {
+        console.warn('FormSubmit AJAX failed, falling back to standard submit:', error);
+        contactForm.submit();
+      });
     });
   }
 
